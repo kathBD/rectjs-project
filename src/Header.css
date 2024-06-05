@@ -1,0 +1,44 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  
+
+
+
+  .welcome {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+   
+
+    p {
+      font-size: 18px;
+      margin: 0; 
+      color: aliceblue;
+    }
+
+    img {
+      width: 2rem;
+      height: 2rem;
+      rotate: 60deg;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 1.6rem;
+    }
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: aliceblue;
+
+    a img {
+      width: 2.6rem;
+    }
+  }
+}
+
