@@ -1,9 +1,28 @@
 import React from 'react'
- function TodoSearch() {
+import './TodoSearch.css'
+
+// eslint-disable-next-line react-hooks/rules-of-hooks
+
+
+
+
+ function TodoSearch({searchValue,
+  setSearchValue}) 
+  
+ 
+{
   return (
-    <div className='container'>
+  
+  <div className='container'>
       
-      <input placeholder='Curso de JSON' className="TodoSearch"/>
+    <input placeholder='Curso de JSON' 
+      className="TodoSearch"
+      value={searchValue}
+      onChange={(event)=>{
+        setSearchValue(event.target.value);
+      }}
+      
+    />
       
     </div>
   )

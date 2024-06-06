@@ -1,45 +1,39 @@
 import React from 'react'
 import { TodoCounter } from './TodoCounter'
-import './TodoCounter.css';
 import { TodoSearch } from './TodoSearch'
-import './TodoSearch.css';
 import { TodoList } from './TodoList'
-import './TodoList.css';
 import { TodoItem } from './TodoItem'
-import './TodoItem.css'
 import { CreateTodoButton } from './CreateTodoButton'
-// import { Header } from './Header';
-// import './Header.css'
-import './CreateTodoButton.css'
 
 
-const defaulTodos = [
-  { text: 'Terminar ruta Js', confirm: true },
-  { text: 'Angular ruta', confirm: false },
-  { text: 'Verificar certificado', confirm: false },
-  { text: 'presentar examen JS', confirm: false }
+const defaultTodos = [
+  { text: 'Terminar curso Java', completed: true },
+  { text: 'Tomar el Curso de Intro a React.js', completed: false },
+  { text: 'presentar examen', completed: false },
+  { text: 'Ir Gym', completed: false },
+  { text: 'Usar estados derivados', completed: true }
 ]
 function App () {
+  const [todos, setTodos] = React.useState(defaultTodos)
+  const [searchValue, setSearchValue] = React.useState('')
+  const completedTodos = todos.filter(todo => !!todo.completed).length
+  const totalTodos = todos.length
+  console.log('Los usuarios buscan todos de ' + searchValue)
   return (
     <>
-
-      <TodoCounter completed={16} total={25} />
-      <TodoSearch />
-
+      <TodoCounter completed={completedTodos} total={totalTodos} />
+      <TodoSearch searchValue={searchValue} setSearchValue={setSearchValue} />
       <TodoList>
-        {defaulTodos.map(todo => (
+        {defaultTodos.map(todo => (
           <TodoItem
             key={todo.text}
             text={todo.text}
             completed={todo.completed}
           />
         ))}
-        ;
       </TodoList>
-
       <CreateTodoButton />
     </>
   )
 }
-
 export default App
