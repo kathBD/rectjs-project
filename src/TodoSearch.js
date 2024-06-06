@@ -1,6 +1,7 @@
 import React from 'react'
 import './TodoSearch.css'
 
+
 // eslint-disable-next-line react-hooks/rules-of-hooks
 
 
@@ -15,15 +16,16 @@ import './TodoSearch.css'
   
   <div className='container'>
       
-    <input placeholder='Curso de JSON' 
+    <input placeholder='Curso de JSON'  
       className="TodoSearch"
       value={searchValue}
       onChange={(event)=>{
         setSearchValue(event.target.value);
+        
       }}
-      
+     
     />
-      
+   
     </div>
   )
 }

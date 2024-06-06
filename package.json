@@ -2,6 +2,7 @@
   "name": "intro-react-base",
   "version": "0.1.0",
   "dependencies": {
+    "flat-color-icons": "^1.1.0",
     "react": "^18",
     "react-dom": "^18",
     "react-scripts": "5.0.1",
@@ -28,5 +29,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "react-icons": "^5.2.1"
   }
 }

@@ -2,6 +2,11 @@ body {
   margin: 0;
   padding: 20px;
   background-image: url('../public/cover.webp');
+  background-position: center;
+  background-size: cover;
+  background-repeat:no-repeat ;
+  max-width: 100%;
+ 
   color: #4f4d51;
   font-family: montserrat, Arial, Helvetica, sans-serif;
   width: 100%;
