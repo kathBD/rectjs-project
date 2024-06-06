@@ -1,8 +1,5 @@
-# Repositorio base del Curso de Introducción a React.js en Platzi
+#  Curso de Introducción a React.js en Platzi
 
-
-
-En este repositorio encontrarás el código de todas las clases del [Curso de Introducción a React.js]
 
 
 ## Getting Started with Create React App
