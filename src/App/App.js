@@ -1,10 +1,6 @@
-import React from 'react'
-import { TodoCounter } from '../TodoCounter/TodoCounter'
-import { TodoSearch } from '../TodoSearch/TodoSearch'
-import { TodoList } from '../TodoList/TodoList'
-import { TodoItem } from '../TodoItem/TodoItem'
-import { CreateTodoButton } from '../CreateTodoButton/CreateTodoButton'
-import { useLocalStorage } from './useLocalStore'
+import React from 'react';
+import {useLocalStorage} from './useLocalStore';
+import {AppUI} from './AppUI'
 
 // const defaultTodos = [
 //   { text: 'Terminar curso Java', completed: true },
@@ -55,22 +51,17 @@ function App () {
     saveTodos(newTodos);
   };
   return (
-    <>
-      <TodoCounter completed={completedTodos} total={totalTodos} />
-      <TodoSearch searchValue={searchValue} setSearchValue={setSearchValue} />
-      <TodoList>
-        {searchedTodos.map(todo => (
-          <TodoItem
-            key={todo.text}
-            text={todo.text}
-            completed={todo.completed}
-            onComplete={() => completeTodo(todo.text)}
-            onDelete={() => deleteTodo(todo.text)}
-          />
-        ))}
-      </TodoList>
-      <CreateTodoButton />
-    </>
+    <AppUI
+    
+    completedTodos={completedTodos}
+    totalTodos={totalTodos}
+    searchValue={searchValue}
+    setSearchValue={setSearchValue}
+    searchedTodos={searchedTodos}
+    completeTodo={completeTodo}
+    deleteTodo={deleteTodo}
+    
+    />
   )
 }
 export default App
