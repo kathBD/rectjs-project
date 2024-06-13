@@ -11,6 +11,25 @@
   outline: none;
 }
 
+.TodoItem::before{
+  content: '';
+  position: absolute;
+  width: 100px;
+  background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(111, 49, 111));
+  height: 130%;
+  animation: rotBGimg 3s linear infinite;
+  transition: all 0.2s linear;
+}
+
+.TodoItem::after{
+  content: '';
+  position: absolute;
+  background: #07182E;
+  ;
+  inset: 5px;
+  border-radius: 15px;
+}
+
 .TodoItem-p {
  
   margin: 24px 0 24px 24px;

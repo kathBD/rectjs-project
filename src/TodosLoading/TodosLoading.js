@@ -1,15 +1,51 @@
-import React from 'react';
-import './TodosLoading.css';
+import React from 'react'
+import './TodosLoading.css'
 
 function TodosLoading () {
   return (
     <>
-      <div className='LoadingTodo-container'>
+      {/* <div className='LoadingTodo-container'>
         <span className='LoadingTodo-completeIcon'></span>
         <p className='LoadingTodo-text'></p>
         <span className='LoadingTodo-deleteIcon'></span>
+      </div> */}
+      <div className='LoadingTodo-container'>
+      <div className='boxes' >
+        <div className='box'>
+          <div />
+          <div />
+          <div />
+          <div />
+        </div>
+        <div className='box'>
+          <div />
+          <div />
+          <div />
+          <div />
+        </div>
+        <div className='box'>
+          <div />
+          <div />
+          <div />
+          <div />
+        </div>
+        <div className='box'>
+          <div />
+          <div />
+          <div />
+          <div />
+        </div>
       </div>
+      </div>
+
+      <div className="LoadingTodo-container">
+      <span className="LoadingTodo-completeIcon"></span>
+      <p className="LoadingTodo-text"></p>
+      <span className="LoadingTodo-deleteIcon"></span>
+    </div>
     </>
+
+
   )
 }
 
