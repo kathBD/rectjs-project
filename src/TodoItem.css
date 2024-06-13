@@ -6,11 +6,13 @@
   justify-content: center;
   align-items: center;
   margin-top: 24px;
-  box-shadow: 2px 5px 50px rgba(37, 90, 195, 0.15);
+  border: 2px solid #676e6f;
   border-radius: 20px;
+  outline: none;
 }
 
 .TodoItem-p {
+ 
   margin: 24px 0 24px 24px;
   width: calc(90% - 120px);
   font-size: 18px;
@@ -40,7 +42,7 @@
   left: 12px;
 }
 .Icon-check--active {
-  color: #609562;
+  color: #4d954f;
 }
 
 .Icon-delete {

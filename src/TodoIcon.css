@@ -3,14 +3,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 48px;
-  width: 48px;
+  height: 60px;
+  width: 60px;
   font-size: 24px;
   font-weight: 700;
 }
 .Icon-container-check {
   position: absolute;
-  left: 12px;
+  left: 14px;
 }
 .Icon-container-check--active {
   color: #4caf50;
@@ -24,11 +24,11 @@
   color: red;
 }
 .Icon-svg {
-  width: 24px;
-  height: 24px;
+  width: 30px;
+  height: 30px;
 }
 .Icon-container-check:hover .Icon-svg {
-  fill: green;
+  fill: rgb(58, 161, 7);
 }
 .Icon-container-delete:hover .Icon-svg {
   fill: red;

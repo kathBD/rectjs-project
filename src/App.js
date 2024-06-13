@@ -12,51 +12,53 @@ const defaultTodos = [
   { text: 'Ir Gym', completed: false },
   { text: 'Usar estados derivados', completed: true }
 ]
-function App() {
-  const [todos, setTodos] = React.useState(defaultTodos);
-  const [searchValue, setSearchValue] = React.useState('');
 
-  const completedTodos = todos.filter(
-    todo => !!todo.completed
-  ).length;
-  const totalTodos = todos.length;
+localStorage.setItem('todos', JSON.stringify(defaultTodos))
+function App () {
+  const localStorageTodos = localStorage.getItem('TODOS_V1')
+  let parsedTodos
+  if (!localStorageTodos) {
+    localStorage.setItem('TODOS_V1', JSON.stringify([]))
+    parsedTodos = []
+  } else {
+    parsedTodos = JSON.parse(localStorageTodos)
+  }
+  const [todos, setTodos] = React.useState(parsedTodos)
 
-  const searchedTodos = todos.filter(
-    (todo) => {
-      const todoText = todo.text.toLowerCase();
-      const searchText = searchValue.toLowerCase();
-      return todoText.includes(searchText);
-    }
-  );
+  const [searchValue, setSearchValue] = React.useState('')
 
-  const completeTodo = (text) => {
-    const newTodos = [...todos];
-    const todoIndex = newTodos.findIndex(
-      (todo) => todo.text === text
-    );
-    newTodos[todoIndex].completed = true;
-    setTodos(newTodos);
-  };
+  const completedTodos = todos.filter(todo => !!todo.completed).length
+  const totalTodos = todos.length
 
-  const deleteTodo = (text) => {
-    const newTodos = [...todos];
-    const todoIndex = newTodos.findIndex(
-      (todo) => todo.text === text
-    );
-    newTodos.splice(todoIndex, 1);
-    setTodos(newTodos);
-  };
-  
+  const searchedTodos = todos.filter(todo => {
+    const todoText = todo.text.toLowerCase()
+    const searchText = searchValue.toLowerCase()
+    return todoText.includes(searchText)
+  })
+
+  const saveTodos = newTodos => {
+    localStorage.setItem('TODOS_V1', JSON.stringify(newTodos))
+    setTodos(newTodos)
+  }
+
+  const completeTodo = text => {
+    const newTodos = [...todos]
+    const todoIndex = newTodos.findIndex(todo => todo.text === text)
+    newTodos[todoIndex].completed = true
+    saveTodos(newTodos)
+  }
+
+  const deleteTodo = text => {
+    const newTodos = [...todos]
+    const todoIndex = newTodos.findIndex(todo => todo.text === text)
+    newTodos.splice(todoIndex, 1)
+    saveTodos(newTodos)
+  }
+
   return (
     <>
-      <TodoCounter
-        completed={completedTodos}
-        total={totalTodos} 
-      />
-      <TodoSearch
-        searchValue={searchValue}
-        setSearchValue={setSearchValue}
-      />
+      <TodoCounter completed={completedTodos} total={totalTodos} />
+      <TodoSearch searchValue={searchValue} setSearchValue={setSearchValue} />
 
       <TodoList>
         {searchedTodos.map(todo => (
@@ -69,10 +71,10 @@ function App() {
           />
         ))}
       </TodoList>
-      
+
       <CreateTodoButton />
     </>
-  );
+  )
 }
 
-export default App;
+export default App
