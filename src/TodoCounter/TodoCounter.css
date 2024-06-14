@@ -2,8 +2,8 @@
    font-size: 24px;
    color: rgb(231, 233, 238);
    text-align: center;
-   margin: auto;
-   padding: 48px;
+   margin: 10px;
+   padding: 20px;
    font-weight: normal;
  }
  
@@ -13,8 +13,8 @@
  }   
 
  .terminado{
-  height: 100px;
-  width: 100px;
+  height: 90px;
+  width: 90px;
 
  
 

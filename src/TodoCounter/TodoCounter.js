@@ -11,8 +11,9 @@ function TodoCounter () {
 
   return (
     <h1 className='TodoCounter'>
+      <img className='terminado' src={pac} alt='completado' />
       <span>
-        Has completado {''}  <img className='terminado' src={pac} alt='completado' />
+        Has completado {''}  
         {completedTodos}
        
       </span>{' '}
