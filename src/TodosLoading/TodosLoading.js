@@ -3,49 +3,19 @@ import './TodosLoading.css'
 
 function TodosLoading () {
   return (
-    <>
-      {/* <div className='LoadingTodo-container'>
-        <span className='LoadingTodo-completeIcon'></span>
-        <p className='LoadingTodo-text'></p>
-        <span className='LoadingTodo-deleteIcon'></span>
-      </div> */}
-      <div className='LoadingTodo-container'>
-      <div className='boxes' >
-        <div className='box'>
-          <div />
-          <div />
-          <div />
-          <div />
-        </div>
-        <div className='box'>
-          <div />
-          <div />
-          <div />
-          <div />
-        </div>
-        <div className='box'>
-          <div />
-          <div />
-          <div />
-          <div />
-        </div>
-        <div className='box'>
-          <div />
-          <div />
-          <div />
-          <div />
-        </div>
-      </div>
+    <div className='LoadingTodo-container'>
+      <span className='LoadingTodo-completeIcon'></span>
+      <p className='LoadingTodo-text'></p>
+      <div className='.container_loading'>
+      <div className='loader'>
+        <div className='circle'></div>
+        <div className='circle'></div>
+        <div className='circle'></div>
+       </div>
       </div>
 
-      <div className="LoadingTodo-container">
-      <span className="LoadingTodo-completeIcon"></span>
-      <p className="LoadingTodo-text"></p>
-      <span className="LoadingTodo-deleteIcon"></span>
+      <span className='LoadingTodo-deleteIcon'></span>
     </div>
-    </>
-
-
   )
 }
 

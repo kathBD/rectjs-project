@@ -1,6 +1,7 @@
 import React from 'react';
 
 
+
 function useLocalStorage(itemName, initialValue) {
   const [item, setItem] = React.useState(initialValue);
   const [loading, setLoading] = React.useState(true);
@@ -43,3 +44,13 @@ function useLocalStorage(itemName, initialValue) {
 }
 
 export { useLocalStorage };
+
+// const defaultTodos = [
+//   { text: 'Terminar curso Java', completed: true },
+//   { text: 'Tomar el Curso de Intro a React.js', completed: false },
+//   { text: 'presentar examen', completed: false },
+//   { text: 'Ir Gym', completed: false },
+//   { text: 'Usar estados derivados', completed: true }
+// ]
+
+// localStorage.setItem('todos', JSON.stringify(defaultTodos))

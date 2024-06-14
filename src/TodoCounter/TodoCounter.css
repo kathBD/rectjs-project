@@ -1,6 +1,6 @@
 .TodoCounter {
    font-size: 24px;
-   color: rgb(198, 205, 226);
+   color: rgb(231, 233, 238);
    text-align: center;
    margin: auto;
    padding: 48px;
@@ -9,6 +9,7 @@
  
  .TodoCounter span {
    font-weight: bold;
+   font-weight: 900;
  }   
 
  .terminado{
