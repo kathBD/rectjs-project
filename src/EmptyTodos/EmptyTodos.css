@@ -1,9 +1,13 @@
 .msg-container {
-  width: 100%;
+  width: 90%%;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  background-color: rgb(216, 185, 245);
+  opacity: 0.7;
+  color: rgb(233, 234, 235);
+  font-weight: bold;
   
 
 }
