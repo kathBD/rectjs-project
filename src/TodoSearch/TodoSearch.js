@@ -1,5 +1,6 @@
 import React from 'react'
 import './TodoSearch.css'
+import { FaSearch } from "react-icons/fa";
 import { TodoContext } from '../Context/TodoContext'
 
 
@@ -17,8 +18,9 @@ import { TodoContext } from '../Context/TodoContext'
   } =    React.useContext(TodoContext)
   return (
   
-  <div className='container'>
-      
+  <div className='container' >
+   
+   <FaSearch className='icon'/>
     <input placeholder='Curso de JSON'  
       className="TodoSearch"
       value={searchValue}
@@ -28,6 +30,7 @@ import { TodoContext } from '../Context/TodoContext'
       }}
      
     />
+  
    
     </div>
   )
