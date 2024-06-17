@@ -1,4 +1,8 @@
-#  Curso de Introducción a React.js en Platzi
+#  Curso de Introducción a React.js
+
+## Demo
+
+https://kathbd.github.io/rectjs-project/
 
 
 
