@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/kathBD/rectjs-project/static/css/main.4137e330.css",
-    "main.js": "/kathBD/rectjs-project/static/js/main.bbd0204f.js",
-    "static/media/cover.webp": "/kathBD/rectjs-project/static/media/cover.e000ae6485bf755ba9df.webp",
-    "static/media/juego.png": "/kathBD/rectjs-project/static/media/juego.e6be5306f35e325d2e2c.png",
-    "static/media/pacman.webp": "/kathBD/rectjs-project/static/media/pacman.eb0b252b892b3ec98255.webp",
-    "static/media/ghost.png": "/kathBD/rectjs-project/static/media/ghost.ec23338467271bce788c.png",
-    "index.html": "/kathBD/rectjs-project/index.html",
-    "main.4137e330.css.map": "/kathBD/rectjs-project/static/css/main.4137e330.css.map",
-    "main.bbd0204f.js.map": "/kathBD/rectjs-project/static/js/main.bbd0204f.js.map"
+    "main.css": "/rectjs-project/static/css/main.dd19140e.css",
+    "main.js": "/rectjs-project/static/js/main.e37dba23.js",
+    "static/media/cover.webp": "/rectjs-project/static/media/cover.e000ae6485bf755ba9df.webp",
+    "static/media/juego.png": "/rectjs-project/static/media/juego.e6be5306f35e325d2e2c.png",
+    "static/media/pacman.webp": "/rectjs-project/static/media/pacman.eb0b252b892b3ec98255.webp",
+    "static/media/ghost.png": "/rectjs-project/static/media/ghost.ec23338467271bce788c.png",
+    "index.html": "/rectjs-project/index.html",
+    "main.dd19140e.css.map": "/rectjs-project/static/css/main.dd19140e.css.map",
+    "main.e37dba23.js.map": "/rectjs-project/static/js/main.e37dba23.js.map"
   },
   "entrypoints": [
-    "static/css/main.4137e330.css",
-    "static/js/main.bbd0204f.js"
+    "static/css/main.dd19140e.css",
+    "static/js/main.e37dba23.js"
   ]
 }
